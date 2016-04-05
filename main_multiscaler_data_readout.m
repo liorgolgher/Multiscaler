@@ -58,4 +58,10 @@ end
 OutputFileName = strcat('MultiscalerMovie-', FileName(1:end-3),'mat' );
 save(OutputFileName);
 
-plot(TotalHitsX,TotalHitsZ,'.')
+% plot(TotalHitsX,TotalHitsZ,'.')
+PhotonSpreadToImage2;
+
+figure;
+imshow(RawImage',[]);
+% imshow(log(double(RawImage'+1)));colorbar;
+axis square;
